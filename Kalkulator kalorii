@@ -1,6 +1,6 @@
+#Kalkulator kcal dla mało aktywnych
 weight = float(input("Podaj swoją wagę w kg: "))
 height = float(input("Podaj swój wzrost w m: "))
 age = float(input("Podaj swój wiek: "))
-s = -161
-kcal = 10 * weight + 6.25 * height + 5 * age + s
-print("Twoje zapotrzebowanie kaloryczne wynosi: ", kcal * 1.6, "kcal")
+kcal = 10 * weight + 6.25 * height - (5 * age) - 161
+print("Twoje zapotrzebowanie kaloryczne wynosi: ", kcal * 1.2, "kcal")
