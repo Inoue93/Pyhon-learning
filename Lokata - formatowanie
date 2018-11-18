@@ -1,0 +1,7 @@
+print("stan konta za 10 lat")
+beg = int(input("Podaj stan początkowy konta: "))
+per = int(input("Podaj roczne oprocentowanie: "))
+year = int(input("Podaj liczbę lat na lokacie: "))
+percent = (per / 100) + 1
+result = (beg * percent) * year
+print("Twoj {0} zł przez {2} lat na lokacie {1} % urośnie do {3}".format(beg, per, year, result))
