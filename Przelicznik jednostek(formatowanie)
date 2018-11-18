@@ -1,0 +1,8 @@
+#print("Podaj cm")
+#cm = float(input())
+#m = cm/100
+#print("Zamiana jednostek wynosi: {} m".format(m))
+
+kg = float(input("Podaj liczbę w kg: "))
+funt = kg * 2.20462262
+print("Zamiana jednostek na funty wynosi: {:.2f}".format(funt))
