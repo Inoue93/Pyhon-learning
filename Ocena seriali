@@ -1,0 +1,23 @@
+
+#Spis oglądanych seriali:
+serials = {
+    "Reign" : 3,
+    'Lucyfer' : 6,
+    'Anne' : 7,
+    'Pandora' : 5
+    }
+
+print(list(serials.keys()))
+print('********************************************')
+print('Podaj serial który chcesz obejrzeć:')
+name = input ()
+print("Serial {} otrzymał ocenę {}".format(name, serials[name]))
+print("Serial otrzymał ocenę:",serials[name])
+print('**********************************************')
+print("Jaki serial dodać do bazy?:")
+b = input()
+print("Podaj ocenę serialu:")
+c = input()
+serials[b]= c
+print('************************************************')
+print(list(serials.keys()))
