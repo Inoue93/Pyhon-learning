@@ -1,0 +1,21 @@
+namesf = "Anna, Magda, Monika, Lucyna, Marta, Laura, "
+namesm = "Tomek, Sebastian, Łukasz, Dawid, Andrzej, Jarek, "
+
+print(namesf, namesm)
+
+name = input("Podaj swoje imię: ")
+print("Czy imię jest żenskie?", name.endswith("a"))
+
+if (name in namesf) or (name in namesm):
+  print("Imię znajduje się w spisie")
+else:
+  print("Nie znamy tego imienia")
+  new = input("Czy imię jest żeńskie czy męskie? ")
+  if (new == "żeńskie"):
+    namesf = namesf + name
+  elif (new == "męskie"):
+    namesm = namesm + name
+
+print ("imiona żeńskie: ", namesf)
+print ("imiona męskie: ",namesm)
+
